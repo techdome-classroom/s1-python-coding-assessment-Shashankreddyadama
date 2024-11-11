@@ -34,7 +34,7 @@ class Solution:
                 dfs(rows - 1, j)
         
         # Step 2: Count the number of distinct islands in the remaining inner grid
-        island_count = 1
+        island_count = 0
         for i in range(1, rows - 1):  # Exclude the border rows
             for j in range(1, cols - 1):  # Exclude the border columns
                 if grid[i][j] == 'L':  # Found an unvisited land cell
